@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="учебный проект. моя библиотека">
+  <meta name="keywords" content="html, css, js">
+  <meta name="author" content="Чумаков Михаил">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Библиотека</title>
 </head>
 <body>
-  <script src="./script.js"></script>
+  <header class="header">
+    <h1 class="header_title">My library</h1>
+  </header>
+
+  <main>
+      <button class="button_add">+</button>   
+  </main>
+
+
+  <footer class="footer">
+
+  </footer>
+
+  <section class="popup">
+    <div class="popup_conteiner">
+      <img class="cards__image" src="" alt="">
+      <h2 class="cards__title"><input class="cards__title-input" type="text" name="title"></h2> <!-- название книги -->
+      <h3 class="cards__autor"><input class="cards__autor-input" type="text" name="autor"></h3> <!-- автор -->
+      <p class="cards__pages"><input class="cards__pages-input" type="number" name="pages"></p> <!-- станиц в книге -->
+      <p class="cards__status"></p> <!-- статус прочтения -->
+      <p class="cards__subtitle"></p> <!-- аннотация -->
+      <button class="popup__save-button" type="submit" value="Сохранить">Сохранить</button>      
+    </div>
+  </section>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
